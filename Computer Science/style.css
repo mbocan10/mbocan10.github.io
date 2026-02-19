@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background-color: dimgray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+#logo {
+    width: 5%;
+    height: 5%;
+    margin: 10px;
+}
+
+header {
+    background-color:slateblue;
+    color:azure;
+    padding-bottom: 20px;
+}
+
+#title {
+    display: inline;
+    font-size: 40px;
+}
+
+#links li {
+    display: inline;
+    padding: 15px;
+    border-right: 2px solid white;
+}
+
+#links li:hover {
+    background-color: white;
+}
+
+#links a {
+    color:black;
+    text-decoration: none;
+}
+
+nav {
+    background-color: aqua;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+section {
+    padding: 20px;
+}
+
+table, th,td {
+    border-collapse: collapse;
+    border: 2px solid black;
+    padding: 30px;
+}
+
+th {
+    background-color: black;
+    color:white;
+}
+
+caption {
+    font-size: 21px;
+    background-color: darkolivegreen;
+    color: white;
+}
+
+td {
+    text-align: center;
+}
+
+.facultyImg {
+    width: 100px;
+    height: 100px;
+    border: 1px solid purple;
+    border-radius: 20px;
+}
+
+img:hover {
+    transform: scale(1.4);
+}
+
+dd {
+    padding-bottom: 20px;
+}
