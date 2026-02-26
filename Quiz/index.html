@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+          <title>Home</title>
+    </head>
+    <body>
+        <header>    
+           <h1 id="title">Clock Quiz</h1>  
+        </header>
+
+        <section>
+            <form action="action_page.php" method="GET" target="_blank">
+                <label for="firstName">First Name:</label><input type="text" id="firstName" name="firstName"><br>
+                <label for="lastName">Last Name:</label><input type="text" id="lastName" name="lastName"><br>
+                <hr>
+
+
+                <!--Radio Buttons-->
+                <legend>How many hands are on a clock?</legend>
+                <label for="two">Two</label> <input type="radio" id="two" name="hands" value="two"><br>
+                <label for="four">Four</label> <input type="radio" id="four" name="hands" value="four">
+                <br>
+                <label for="one">One</label> <input type="radio" id="one" name="hands" value="one">
+                <br>
+                <label for="three">Three</label> <input type="radio" id="three" name="hands" value="three">
+                <br><br>
+                <hr>
+
+                <legend>The shortest hand on a clock is called the Hour hand?</legend>
+
+                <label for="true">True</label>  <input type="radio" id="true" name="hour" value="true"><br>
+                <label for="false">False</label>  <input type="radio" id="false" name="hour" value="false"><br><br>
+
+
+
+                <!--Checkboxes-->
+                <fieldset>
+                    <legend>How many hours appear on a clock?</legend>
+                    
+                    <input type="checkbox" id="13" name="13" value="13">
+                    <label for="13">13</label>
+
+                    <input type="checkbox" id="12" name="12" value="12">
+                    <label for="12">12</label><br>
+
+                    <input type="checkbox" id="24" name="24" value="24">
+                    <label for="24">24</label>
+                    
+                    <input type="checkbox" id="11" name="11" value="11">
+                    <label for="11">11</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>How many seconds are in a minute?</legend>
+                    <input type="checkbox" id="cosc1301" name="cosc1301" value="cosc1301">
+                    <label for="cosc1301">50</label>
+
+                    <input type="checkbox" id="60" name="60" value="60">
+                    <label for="60">60</label><br>
+
+                    <input type="checkbox" id="59" name="59" value="59">
+                    <label for="59">59</label>
+                    
+                    <input type="checkbox" id="61" name="61" value="61">
+                    <label for="61">61</label>
+                </fieldset>
+
+                <input type="submit" value=" click to submit"><input type="reset" value="reset form">
+            </form>
+        </section>
+    </body>
+</html>
