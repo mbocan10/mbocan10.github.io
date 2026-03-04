@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tax Calculator</title>
+
+<style>
+body{
+    font-family: Arial, sans-serif;
+    padding: 40px;
+}
+
+h2{
+    margin-bottom: 20px;
+}
+
+input{
+    padding: 6px;
+    margin: 5px 0;
+}
+
+button{
+    padding: 8px 15px;
+    margin-top: 10px;
+}
+</style>
+
+<script>
+function calculateTax(){
+
+    let purchaseAmount = parseFloat(document.getElementById("purchase").value);
+
+    let taxRate = 0.0825;
+
+    let tax = purchaseAmount * taxRate;
+
+    let total = purchaseAmount + tax;
+
+    document.getElementById("tax").value = tax.toFixed(2);
+
+    document.getElementById("total").value = total.toFixed(2);
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>Purchase Tax Calculator</h2>
+
+<form>
+
+<label>Purchase Amount:</label><br>
+<input type="number" id="purchase" placeholder="Enter amount"><br><br>
+
+<button type="button" onclick="calculateTax()">Calculate</button>
+
+<br><br>
+
+<label>Tax Amount:</label><br>
+<input type="text" id="tax" disabled><br><br>
+
+<label>Total Amount:</label><br>
+<input type="text" id="total" disabled>
+
+</form>
+
+</body>
+</html>
